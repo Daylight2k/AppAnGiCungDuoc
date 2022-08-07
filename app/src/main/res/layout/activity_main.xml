@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="4"
+    >
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vflper"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/anh1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bua1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/anh2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bua3"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/anh3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mon2"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/anh4"
+            android:src="@drawable/mon3"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/anh5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bua2"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/anh6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mon1"/>
+
+    </ViewFlipper>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:background="#DD1ECDE4"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/btAnGi"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imgangi" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTimMonAn"
+        android:text="Tìm món ăn"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:background="#FFEB3B"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btDSMon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imgds_removebg_preview" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý món ăn"
+        android:id="@+id/txtQLMA"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#1DF826"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/btThongKe"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/anhthongke"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thống kê chi tiêu"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txtThongKe"
+            android:textColor="@color/black"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

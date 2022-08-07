@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appangicungduoc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_food_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_food_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppAnGiCungDuoc">
+        <activity
+            android:name=".AnGi.AnGiHienThi2"
+            android:exported="true" />
+        <activity
+            android:name=".DanhSach.MainActivitySuaMon"
+            android:exported="true" />
+        <activity
+            android:name=".DanhSach.ThongTinMon"
+            android:exported="true" />
+        <activity
+            android:name=".AnGi.AnGiHienThi1"
+            android:exported="true" />
+        <activity
+            android:name=".DanhSach.MainActivityThemMon"
+            android:exported="true" />
+        <activity
+            android:name=".ThongKe.ThongkeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DanhSach.DSMonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AnGi.AngiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

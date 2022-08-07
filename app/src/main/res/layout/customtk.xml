@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85FB8B">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="#FFF3"
+        android:gravity="center"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTien"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center|right"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtTien2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTien2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text=" VND"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

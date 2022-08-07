@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/hinhnends2"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lvdanhsach"
+        android:layout_width="394dp"
+        android:layout_height="540dp"
+        android:background="#D9F6B6"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimKiem" />
+
+    <Button
+        android:id="@+id/btThem"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="Thêm món"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvdanhsach" />
+
+    <EditText
+        android:id="@+id/txtTimKiem"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nội dung tìm kiếm"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btTimKiem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/search"
+        android:text="Tìm kiếm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtTimKiem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

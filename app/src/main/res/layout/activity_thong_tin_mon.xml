@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anhnen3"
+    tools:context=".ThongTinMon">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtTTTenMon"
+        android:layout_width="350dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="ten"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtTTLoai"
+        android:layout_width="351dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="loai"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTTTenMon"
+        app:layout_constraintTop_toBottomOf="@+id/txtTTTenMon" />
+
+    <TextView
+        android:id="@+id/txtTTGia"
+        android:layout_width="349dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="gia"
+
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTTLoai"
+        app:layout_constraintTop_toBottomOf="@+id/txtTTLoai" />
+
+    <TextView
+        android:id="@+id/txtTTNguyenLieu"
+        android:layout_width="347dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="nguyen lieu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTTTenMon"
+        app:layout_constraintTop_toBottomOf="@+id/txtTTGia" />
+
+    <Button
+        android:id="@+id/btSua"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Sửa"
+        app:layout_constraintStart_toStartOf="@+id/txtTTNguyenLieu"
+        app:layout_constraintTop_toBottomOf="@+id/txtTTNguyenLieu" />
+
+    <Button
+        android:id="@+id/btXoa"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Xóa"
+        app:layout_constraintEnd_toEndOf="@+id/txtTTTenMon"
+        app:layout_constraintTop_toBottomOf="@+id/txtTTNguyenLieu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
